@@ -1,4 +1,4 @@
-import React, { PureComponent, createRef } from 'react'
+import React, { PureComponent } from 'react'
 
 class Purecomp extends PureComponent{
    constructor(props){

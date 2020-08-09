@@ -11,10 +11,30 @@ import Fragment from './component/Fragment'
 import Table from './component/Table'
 import Purecomp from './component/Purecomp'
 import Refrsdemo from './component/Refrsdemo'
+import Portaldemo from './component/PortalDemo'
+import Errorboundary from './component/Errorboundary'
+import Errorboundaryclass from './component/Errorboundaryclass'
+import Clickcounter from './component/clickcounter'
+import Onmouseover from './component/onmouseover'
+import ContextA from './component/contextA'
+import {Userprovider} from './component/userContext'
+
 function App() {
   return (
     <div className="App">
-   <Refrsdemo/>
+      {/* <Errorboundaryclass>
+   <Errorboundary name="akash"/>
+   </Errorboundaryclass>
+   <Errorboundaryclass>
+   <Errorboundary name="akashsharma"/>
+   </Errorboundaryclass> */}
+
+{/* <Clickcounter name="akash"/>
+<Onmouseover name="sharma"/> */}
+<Userprovider value="Akash">
+<ContextA/> 
+</Userprovider>
+
     </div>
   );
 }
